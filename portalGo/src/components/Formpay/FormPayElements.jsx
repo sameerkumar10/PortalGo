@@ -6,7 +6,7 @@ const FormPayElements = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Change height to min-height */
-  background: #f9f9f9; /* Light background color */
+  background: #e7e4e4; /* Light background color */
 
   h2 {
     margin-bottom: 20px;

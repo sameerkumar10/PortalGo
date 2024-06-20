@@ -1,6 +1,10 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 export const connectDB = async () => {
-  const { connection } = await mongoose.connect(process.env.MONGO_URI);
-  console.log(`Mongodb is connected with ${connection.host}`);
+  try {
+    const connection = await mongoose.connect('mongodb+srv://samweb10:samweb10@cluster0.kvwn3.mongodb.net/razor');
+    console.log(`MongoDB connected: ${connection.connection.host}`);
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error);
+  }
 };
